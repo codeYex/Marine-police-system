@@ -1,5 +1,8 @@
 # Marine-police-system
 User and and admin Dashboard for the Marine Police
+sample code 
+![Screenshot 2025-01-22 012655](https://github.com/user-attachments/assets/9272d37a-ebc8-448f-9546-b34f943f8309)
+
 
 ADMIN DASHBOARD
 ![dashb](https://github.com/user-attachments/assets/6bf3058d-067f-49e2-bf30-a60f6018b361) 
