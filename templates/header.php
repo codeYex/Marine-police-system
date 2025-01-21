@@ -16,8 +16,8 @@
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                <li class="nav-item"><a href="admin_dashboard.php" class="nav-link"><i class="fas fa-cogs"></i> Settings</a></li>
-                <li class="nav-item"><a href="profile.php" class="nav-link"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="nav-item"><a href="admin_dashboard.php" class="nav-link"><i class="fas fa-cogs"></i> Dashboard</a></li>
+                <li class="nav-item"><a href="profile.php" class="nav-link"><i class="fas fa-user"></i> Profile Settings</a></li>
                 <?php if (isset($_SESSION['admin_id'])): ?>
                     <li class="nav-item login-link"><a href="logout.php" class="nav-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 <?php else: ?>
