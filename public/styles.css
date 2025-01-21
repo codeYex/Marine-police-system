@@ -1,0 +1,263 @@
+/* path/to/your/styles.css */
+
+/* General reset and basic styling */
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #004080; /* Dark blue background */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure the header is on top */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #004080; /* Dark blue background */
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+  margin-top: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  width: 100%; /* Ensure it takes full width */
+  padding: 0 20px; /* Add some padding */
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link i {
+  margin-right: 8px; /* Add some space between icon and text */
+}
+
+.nav-link:hover {
+  color: #ffdd57; /* Golden yellow color on hover */
+}
+
+/* Make sure the login link is aligned to the right */
+.login-link {
+  margin-left: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px 10px ;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Card styling */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Ensure items do not wrap to a new line */
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensure images maintain aspect ratio and cover the area */
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 1.25em;
+}
+
+.card p {
+  color: #777;
+}
+
+/* Login page styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px); /* Adjust height considering the fixed footer */
+}
+
+.login-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.login-form h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.login-form div {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px; /* Add space between label and input */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.login-form button,
+.back-home-button {
+  width: 93%;
+  padding: 10px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-form button:hover,
+.back-home-button:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.back-home-button {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #004080;
+  border: 1px solid #004080;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add Personnel form styling */
+.add-personnel-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding-top: 50px; /* Increase top padding to ensure space for sticky header */
+    margin-top: 10px; /* Add top margin */
+    margin-bottom: 20px;
+}
+
+.add-personnel-form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.add-personnel-form h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.add-personnel-form div {
+    margin-bottom: 15px;
+}
+
+.add-personnel-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-personnel-form input[type="text"],
+.add-personnel-form input[type="email"],
+.add-personnel-form input[type="password"],
+.add-personnel-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px; /* Add space between label and input */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.add-personnel-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-personnel-form button:hover {
+    background-color: green;
+}
